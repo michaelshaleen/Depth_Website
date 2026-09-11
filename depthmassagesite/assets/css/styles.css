@@ -109,7 +109,30 @@ p { color: var(--text-muted); }
   padding: 16px 20px;
 }
 
-.logo-img { height: 26px; width: auto; }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-badge {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 420px) {
+  .logo-text { display: none; }
+}
 
 .header-actions {
   display: flex;
